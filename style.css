@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -12,6 +13,30 @@ body {
     color: #ffffff;
     overflow-x: hidden;
 }
+
+
+.gif{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+ }
+ 
+ .gif{
+    animation:vanish 4s forwards ;
+ }
+ @keyframes vanish {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+ }
 
 header {
     text-align: center;
